@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Acheivement Demo</string>
     <string name="action_settings">Settings</string>
-    <string name="button_text">Family</string>
+    <string name="button1_text">Family 1</string>
+    <string name="button2_text">Family 2</string>
+    <string name="button3_text">Family 3</string>
+    <string name="button4_text">Family 4</string>
+    <string name="detail_text">Family 1</string>
 </resources>
