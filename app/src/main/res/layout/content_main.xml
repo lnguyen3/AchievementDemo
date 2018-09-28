@@ -12,16 +12,19 @@
         android:padding="10dp">
 
         <Button
+            android:id="@+id/button_family1"
             android:text="@string/button1_text"
             android:textSize="35sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"/>
         <Button
+            android:id="@+id/button_family2"
             android:text="@string/button2_text"
             android:textSize="35sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"/>
         <Button
+            android:id="@+id/button_family3"
             android:text="@string/button3_text"
             android:textSize="35sp"
             android:layout_columnWeight="1"
@@ -30,30 +33,108 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/detail_text"
-            android:textSize="40sp"
+            android:text="Selected family:"
+            android:textSize="30sp"
             android:paddingTop="30dp"
             android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/selected_family"
+            android:text="No family selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current indicator:"
+            android:textSize="30sp"
+            android:paddingTop="30dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/selected_family_status"
+            android:text="Family status here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Earned achievement:"
+            android:textSize="30sp"
+            android:paddingTop="30dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/selected_family_achievement"
+            android:text="Achievement here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <Button
-            android:layout_width="50dp"
+            android:id="@+id/button_red"
+            android:text="Mark as RED"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:padding="10dp"
             android:background="#ff0000" />
         <Button
-            android:layout_width="50dp"
+            android:id="@+id/button_yellow"
+            android:text="Mark as YELLOW"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:padding="10dp"
             android:background="#ffff00" />
         <Button
-            android:layout_width="50dp"
+            android:id="@+id/button_green"
+            android:text="Mark as GREEN"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:padding="10dp"
             android:background="#008000" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Achievements:"
+            android:textSize="30sp"
+            android:paddingTop="30dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/num_achievements"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
 
     </LinearLayout>
 
